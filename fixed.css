@@ -10,13 +10,6 @@ margin-right: 0px!important;
  -webkit-backface-visibility: hidden;
 }
 
-html,body
-{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
 
 /*--- Navigation --*/
 .navbar {
@@ -58,6 +51,7 @@ html,body
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   will-change: transform;
+  overflow: hidden
 }
 
 .caption {
@@ -138,6 +132,7 @@ html,body
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2.5rem;
     text-align: center;
+    overflow: hidden
 }
 
 .special{
@@ -171,8 +166,10 @@ color: #000000;
     justify-content: center;
     margin-top: 8rem;
     margin-bottom: 5rem;
-}
-  padding-bottom: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden
+  }
+
 
 .member-success-item:last-child{
     margin-top: 8rem;
@@ -235,6 +232,7 @@ color: #000000;
   z-index: 1;
   color: black;
   text-transform: uppercase;
+  overflow: hidden
 }
 .join-caption h1 {
   font-size: 3.8rem;
