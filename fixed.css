@@ -10,6 +10,14 @@ margin-right: 0px!important;
  -webkit-backface-visibility: hidden;
 }
 
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 /*--- Navigation --*/
 .navbar {
   text-transform: uppercase;
