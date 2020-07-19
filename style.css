@@ -1,0 +1,366 @@
+/*--- Start Universal --*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'leto';
+    color: #000;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+    background-size: cover;
+}
+
+section{
+    padding: 6rem 0;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+img{
+    width: 100%;
+}
+/*--- End Universal --*/
+
+
+
+/*--- Start Reuseable --*/
+.container{
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-heading{
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.section-heading h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #5763e6;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.has-margin-right{
+    margin-right: 5rem;
+}
+
+/*--- End Reuseable --*/
+
+
+
+/*--- Start Header --*/
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+/*--- Start Navigation --*/
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing:.1rem;
+  background-color: black;
+  font-color: #000000;
+}
+
+.navbar-brand img {
+  height: 2rem;
+}
+.navbar-nav li {
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #5763e6;
+}
+
+.landing-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.landing-text h1{
+    font-size: 6rem;
+    font-family: 'leto';
+    background:#5763e6;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    user-select: none;
+}
+
+.landing-text h3{
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    user-select: none;
+}
+
+
+.btn {
+    display: inline-block;
+    transition: all 650ms;
+    color: #fff;
+    border-color: #505962;
+    background-color: #1EBBA3;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-top: 3.5rem;
+    padding: 2.5rem 6rem;
+    border-radius: 3rem;
+}
+
+a.btn {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 650ms;
+    border-color: #189582;
+    background-color: #189582;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-top: 3.5rem;
+    padding: 2.5rem 6rem;
+    border-radius: 3rem;
+}
+
+.main-btn:hover{
+  border-color: #189582;
+  background-color: #189582;
+  color: white;
+}
+{
+    transform: translateY(0);
+}
+/*--- End Navigation --*/
+
+/*--- End Header --*/
+
+
+/*--- Start Specialties --*/
+.our-special{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 22rem;
+    text-align: center;
+}
+
+.special{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.special h1{
+    color: #1EBBA3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 2rem -2px 2rem 0;
+}
+
+/*--- Start Specialties --*/
+
+
+
+/*--- Start Member-Success --*/
+.success-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.success-item:last-child{
+    margin-bottom: 0;
+}
+
+.success-img{
+    width: 50rem;
+    flex: 1;
+}
+
+.success-description{
+    flex: 1;
+}
+
+.success-description h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1EBBA3;
+
+    margin: 1rem 0;
+}
+
+.success-description .cta{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #3883ff;
+    transition: color 650ms;
+}
+
+.success-description .cta:hover{
+    color: #2f67cd;
+}
+/*--- Start Member-Success --*/
+
+/*--- Start Join --*/
+
+.join-caption {
+  width: 100%;
+  max-width: 100%;
+  z-index: 1;
+  color: black;
+  text-transform: uppercase;
+  overflow: hidden
+}
+.join-caption h1 {
+  font-size: 3.8rem;
+  color: #47627d;
+  font-weight: 700;
+  letter-spacing .3rem;
+  padding-bottom: 1rem;
+  }
+.join-caption h3 {
+  font-style: 2rem;
+  color: #47627d;
+  font-weight: 700;
+  text-shadow: .1rg .1rem .5rem black;
+  padding-bottom: 1.6rem;
+  }
+.join-btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-color: #505962;
+  background-color: #1EBBA3;
+  color: white;
+  }
+
+.join-btn-lg:hover,
+.join-btn-lg:focus {
+  border-color: #189582;
+  background-color: #189582;
+  color: white;
+  }
+
+/*--- End Join --*/
+
+
+
+@keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.99)
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(46, 204, 113, 0)
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(46, 204, 113, 0)
+    }
+}
+
+/*--- Start Media --*/
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background: #2d3239;
+    color: #75715e;
+  }
+
+@media screen and (max-width: 768px) {
+    body{
+        background: whitesmoke;
+        overflow-x: hidden;
+    }
+
+    .landing-text h1{
+        font-size: 5rem;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    li{
+        margin: 2rem 0;
+    }
+
+    .nav-link{
+        font-size: 4.5rem;
+    }
+
+    .section-heading h1{
+        font-size: 3rem;    }
+}
+
+@media screen and (max-width: 600px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .menu-toggler{
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .landing-text h1{
+        font-size: 4rem;
+    }
+
+    .nav-link{
+        font-size: 3.5rem;
+    }
+
+    .up{
+        right: 2rem;
+    }
+}
+
+/*--- End Media --*/
